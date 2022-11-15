@@ -5,10 +5,6 @@ struct Rectangle {
 }
 
 impl Rectangle {
-    fn area(&self) -> u32 {
-        self.width * self.height
-    }
-
     fn can_hold(&self, second: &Rectangle) -> bool {
         self.width > second.width && self.height > second.height
     }
